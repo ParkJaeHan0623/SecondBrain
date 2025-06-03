@@ -23,9 +23,9 @@ macOS, Git, Node.js, JDK, Spring 등 개발 세팅 가이드
 
 ---
 
-## 🌱 Obsidian 관련
+## 💎 Obsidian 관련
 
-### 💎 [[옵시디언퍼블리싱]]
+### 🌱  [[옵시디언퍼블리싱]]
 Quartz + Cloudflare Pages 기반 Obsidian 웹 퍼블리싱 실전 구성법
 
 ### 📝 [[마크다운(MarkDown)]]
