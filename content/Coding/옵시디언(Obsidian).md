@@ -63,44 +63,6 @@
 | Flowershow               | github 업로드 |
 
 
-# 5. 옵시디언 퍼블리싱
-
-^e4f2cf
+# 5. [[옵시디언퍼블리싱]]
 
 > 공유 및 퍼블리싱의 제한성 때문에 유료버전을 구매하려 했으나 서버에 무료로 호스팅 할 수 있는 방법을 발견해 적용해 보았다.
-
-## 5.1  준비
-> Cloudflare 계정이 필요하다. Cloudflare 계정이 없다면 [여기](https://dash.cloudflare.com/sign-up) 에서 계정을 생성할 수 있음.
-
-## 5.2 GitHub에서 새로운 Quartz 저장소 생성
-> GitHub의 [Quartz](https://github.com/jackyzha0/quartz) 페이지에 방문한다. 
-> 그리고 **Use this template** 버튼을 클릭한 다음, **Create a new repository**를 선택.
-
-![[스크린샷 2025-01-15 오전 12.14.20.png]]
-
-## 5.3 Cloudflare에 GitHub 연결
-> [Cloudflare 대시보드](https://dash.cloudflare.com/) 에 접속해 **Workers 및 Pages** 사이드바 클릭
-
-![[스크린샷 2025-01-15 오전 12.28.23.png]]
-
-![[스크린샷 2025-01-15 오전 12.27.41.png]]
-> 다음 화면에서 **Pages** 탭을 선택하고, 이전에 **GitHub에서 생성한 저장소**를 연결한다.
-
-![[스크린샷 2025-01-15 오전 12.29.30.png]]
-
-> 프로젝트 이름을 입력하고 (입력한 이름이 도메인명이 됨), 프로덕션 브랜치를 v4로 설정
-
-![[스크린샷 2025-01-15 오전 12.36.24.png]]
-> **프레임워크 미리 설정**을 **없음**으로 설정하고, 
-> **빌드 명령**에는 `npx quartz build`를 입력.
-> 그리고 **빌드 출력 디렉토리**에는 `public`를 입력한다
-
-![[스크린샷 2025-01-15 오전 12.36.37.png]]
-
-## 5.4 옵시디언 노트를 웹에 게시
-> [Flowershow 플러그인](https://obsidian.md/plugins?id=flowershow)을 사용하면 옵시디언 노트를 깃허브 저장소에 업로드 할 수 있다.
-
-![[스크린샷 2025-01-15 오전 12.45.41.png]]
-> publish 버튼을 누르면 CloudFlare에 배포가 된다. ~~더럽게 오래걸린다~~
-
-![[스크린샷 2025-01-15 오전 12.47.15.png]]
