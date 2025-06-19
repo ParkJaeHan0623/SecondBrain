@@ -63,3 +63,4 @@ export type QuartzEmitterPluginInstance = {
   getQuartzComponents?: (ctx: BuildCtx) => QuartzComponent[]
   externalResources?: ExternalResourcesFn
 }
+
