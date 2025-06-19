@@ -1,6 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import Disqus from "./quartz/components/Disqus"
+import { DisqusInject } from "./quartz/plugins/plugin-disqus"
+
 
 const config: QuartzConfig = {
   configuration: {
@@ -74,9 +75,8 @@ const config: QuartzConfig = {
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
-
+      DisqusInject(),
       Plugin.ContentPage({
-        afterBody: [Disqus], // ← 댓글 컴포넌트 위치에 Disqus 삽입
       }),
 
       Plugin.FolderPage(),
