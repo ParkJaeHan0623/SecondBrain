@@ -1,6 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import Giscus from "./quartz/components/Giscus" // ✅ Giscus 컴포넌트 import
+import Disqus from "./quartz/components/Disqus"
 
 const config: QuartzConfig = {
   configuration: {
@@ -76,7 +76,7 @@ const config: QuartzConfig = {
       Plugin.ComponentResources(),
 
       Plugin.ContentPage({
-        afterBody: [Giscus], // ✅ 댓글 컴포넌트 삽입 위치
+        afterBody: [Disqus], // ← 댓글 컴포넌트 위치에 Disqus 삽입
       }),
 
       Plugin.FolderPage(),
